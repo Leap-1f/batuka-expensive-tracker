@@ -1,9 +1,11 @@
 import { Geld } from "../../public/Geld";
 import { Logo } from "../../public/Logo";
 
-export const LogIn = () => {
+export const LogIn = (props) => {
+  const { LoginComp } = props;
+
   return (
-    <div className="flex w-auto flex-col gap-[40px]">
+    <div className={`flex w-auto flex-col gap-[40px]`}>
       <div>
         <div className="flex py-[4px] px-[10px] justify-center items-center gap-[10px]">
           <Logo></Logo>
@@ -44,11 +46,13 @@ export const LogIn = () => {
         </label>
       </div>
       <div>
-        <button className="btn bg-[#0166FF] w-full">Log In</button>
+        <button className="btn text-white bg-[#0166FF] w-full">Log In</button>
       </div>
-      <div className="text">
+      <div className=" text-center flex gap-[10px] justify-center">
         Don’t have account?
-        <a className="link link-hover text-[#0166FF]">Sign Up</a>
+        <a onClick={LoginComp} className="link link-hover  text-[#0166FF]">
+          Sign up
+        </a>
       </div>
     </div>
   );
