@@ -32,6 +32,9 @@ export const BalanceSec = () => {
           How much cash do you have in your wallet?
         </div>
       </div>
+      <div>
+        <button className="btn w-full bg-[#0166FF] text-white">Next</button>
+      </div>
     </div>
   );
 };

@@ -20,7 +20,9 @@ export default function SignUp() {
           </ul>
         </div>
       </div>
-      <div></div>
+      <div>
+        <Currency></Currency>
+      </div>
       <div></div>
     </div>
   );
