@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { Logo } from "../../../public/Logo";
+import Dashboard from "@/pages/dashboard";
 
 export const Header = () => {
   return (
@@ -6,8 +8,10 @@ export const Header = () => {
       <div className="flex  justify-between items-center w-full  ">
         <div className="flex gap-[24px] h-[24px] w-fit">
           <Logo></Logo>
-          <h1>Dashboard</h1>
-          <div className="text-black font-semibold">Records</div>
+          <Link href="./dashboard">
+          <h1>Dashboard</h1></Link>
+          <Link href="./records">
+          <div className="text-black font-semibold">Records</div></Link>
         </div>
         <div className="flex gap-[24px] h-fit w-fit">
           <div className="flex bg-[#0166FF] rounded-[20px] justify-center items-center gap-[4px] py-[6px] px-[6px] ">

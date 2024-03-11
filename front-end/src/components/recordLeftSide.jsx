@@ -31,12 +31,26 @@ export const RightSide = () => {
       <div>
         <div className="flex flex-col gap-[10px]">
           Types
+          <div className="flex gap-[10px]">
           <input type="radio" name="radio-1" className="radio" checked />
+          <div>All</div>
+          </div>
+          <div className="flex gap-[10px]">
           <input type="radio" name="radio-1" className="radio" />
+          <div>Income</div>
+          </div>
+          <div className="flex gap-[10px]">
           <input type="radio" name="radio-1" className="radio" />
+          <div>Expense</div>
+          </div>
         </div>
       </div>
-      <div></div>
+      <div>
+        <div className="flex justify-between">
+          <div>Category </div>
+          <div className="text-[#1F2937]">Clear</div>
+        </div>
+      </div>
       <div></div>
     </div>
   );
