@@ -7,10 +7,10 @@ export const Header = () => {
         <div className="flex gap-[24px] h-[24px] w-fit">
           <Logo></Logo>
           <h1>Dashboard</h1>
-          <div>Records</div>
+          <div className="text-black font-semibold">Records</div>
         </div>
         <div className="flex gap-[24px] h-fit w-fit">
-          <div className="flex bg-[#0166FF] rounded-[20px] justify-center items-center gap-[4px] py-[4px] px-[8px] ">
+          <div className="flex bg-[#0166FF] rounded-[20px] justify-center items-center gap-[4px] py-[6px] px-[6px] ">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
