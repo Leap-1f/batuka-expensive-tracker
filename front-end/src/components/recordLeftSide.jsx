@@ -1,9 +1,9 @@
-export const RightSide = () => {
+export const LeftSide = () => {
   return (
-    <div className="records py-[24px] px-[16px] flex gap-[24px] flex-col">
-      <div>
+    <div className="rounded-[10px] bg-white py-[24px] px-[16px] flex gap-[24px] w-[30%] flex-col">
+      <div className="flex flex-col gap-[10px]">
         <div className="text-xl">Records</div>
-        <button className="btn bg-[#0166FF] w-full rounded-[20px] h-fit flex gap-[4px] items-center justify-center">
+        <button className="btn bg-[#0166FF] w-full rounded-[20px]  flex gap-[4px] items-center justify-center">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -32,16 +32,16 @@ export const RightSide = () => {
         <div className="flex flex-col gap-[10px]">
           Types
           <div className="flex gap-[10px]">
-          <input type="radio" name="radio-1" className="radio" checked />
-          <div>All</div>
+            <input type="radio" name="radio-1" className="radio " checked />
+            <div>All</div>
           </div>
           <div className="flex gap-[10px]">
-          <input type="radio" name="radio-1" className="radio" />
-          <div>Income</div>
+            <input type="radio" name="radio-1" className="radio" />
+            <div>Income</div>
           </div>
           <div className="flex gap-[10px]">
-          <input type="radio" name="radio-1" className="radio" />
-          <div>Expense</div>
+            <input type="radio" name="radio-1" className="radio" />
+            <div>Expense</div>
           </div>
         </div>
       </div>
@@ -51,7 +51,27 @@ export const RightSide = () => {
           <div className="text-[#1F2937]">Clear</div>
         </div>
       </div>
-      <div></div>
+      <div className="flex flex-col gap-[24px]">
+        <div>Amount Range</div>
+        <div className="flex flex-col gap-[24px]">
+          <div className="flex gap-[24px] w-full ">
+            <div className="flex justify-center h-[48px] w-[50%] items-center rounded-[8px] bg-[#F3F4F6] py-[16px] px-[16px] ">
+              0
+            </div>
+            <div className="flex h-[48px] w-[50%] justify-center items-center rounded-[8px] bg-[#F3F4F6] py-[16px] px-[16px]">
+              1000
+            </div>
+          </div>
+          <input
+            type="range"
+            min={0}
+            max="1000"
+            value="300"
+            className="range"
+          />
+          <div></div>
+        </div>
+      </div>
     </div>
   );
 };

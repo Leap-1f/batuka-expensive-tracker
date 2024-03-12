@@ -1,4 +1,4 @@
-import { Header } from "@/components/Layout/appHeader";
+import { Header } from "@/components/Layout/AppHeader";
 import { AppMain } from "../components/Layout/app.Main";
 
 export default function Dashboard() {

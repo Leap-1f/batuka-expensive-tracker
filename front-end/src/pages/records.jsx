@@ -1,5 +1,5 @@
-import { Header } from "@/components/Layout/appHeader";
-import { RecordMain } from "@/components/Layout/recordMain";
+import { Header } from "@/components/Layout/AppHeader";
+import { RecordMain } from "@/components/Layout/RecordMain";
 
 export default function Dashboard() {
   return (

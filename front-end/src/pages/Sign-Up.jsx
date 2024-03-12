@@ -1,6 +1,6 @@
 import { BalanceSec } from "@/components/Balence";
 import { FinishSec } from "@/components/Finish";
-import { Currency } from "@/components/currency";
+import { Currency } from "@/components/Currency";
 import { Logo } from "../../public/Logo";
 import { Geld } from "../../public/Geld";
 
