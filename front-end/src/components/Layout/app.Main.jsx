@@ -1,6 +1,6 @@
 import { UserCard } from "../appCard";
-import { LastRecords } from "./lastRecords";
-import { UserAmount } from "./userAmount";
+import { LastRecords } from "./LastRecords";
+import { UserAmount } from "./UserAmount";
 
 export const AppMain = () => {
   return (

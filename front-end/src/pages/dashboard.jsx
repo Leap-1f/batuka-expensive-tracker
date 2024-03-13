@@ -1,5 +1,5 @@
-import { Header } from "@/components/Layout/AppHeader";
-import { AppMain } from "../components/Layout/app.Main";
+import { Header } from "@/components/layout/AppHeader";
+import { AppMain } from "../components/layout/App.Main";
 
 export default function Dashboard() {
   return (
