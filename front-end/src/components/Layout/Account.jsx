@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { LogIn } from "../Log-In";
+import { LogIn } from "../../pages/logIn";
 import { SignUp } from "../SignUp";
 
 export const AccountSec = () => {

@@ -1,23 +1,40 @@
 import { useState } from "react";
-export const Modal = () => {
-  const [typeChange, setTypeChange] = useState(true);
-  const clickChange = () => {
-    setTypeChange(!typeChange);
+export const Modal = ({ hidden }) => {
+  const [changeType, setChangeType] = useState(true);
+  const expenceType = () => {
+    setChangeType(false);
+  };
+  const incomeType = () => {
+    setChangeType(true);
   };
   return (
-    <div className="flex flex-col rounded-[10px] bg-white w-[792px] px-[24px] py-[24px] ">
+    <div className="flex flex-col rounded-[24px] bg-white w-[792px] px-[24px] py-[24px] sticky z-[3]   ">
       <div className="flex justify-between py-[10px] px-[8px] ">
         <div className="text-xl">Add Record</div>
-        <div className="2xl">X</div>
+        <button onClick={hidden} className="2xl">
+          X
+        </button>
       </div>
       <div className="flex justify-center items-center border-t-[1px]">
         <div className="flex py-[10px] px-[24px]  flex-col w-[50%]  gap-[24px]">
           <div className=" flex flex-col gap-[20px] w-full">
-            <div className="flex rounded-[8px] justify-between w-full bg-[#F3F4F6]  ">
-              <div className="bg-[#0166FF] rounded-[10px] w-[50%] text-center">
+            <div className="flex rounded-[24px] justify-between w-full bg-[#F3F4F6]  ">
+              <button
+                onClick={expenceType}
+                className={`${
+                  changeType ? "" : "bg-[#0166FF]"
+                } h-[40px] rounded-[24px] w-[50%] text-center `}
+              >
                 Expense
-              </div>
-              <div className="rounded-[10px] w-[50%] text-center">income</div>
+              </button>
+              <button
+                onClick={incomeType}
+                className={`rounded-[24px] w-[50%]  text-center h-[40px] ${
+                  changeType ? "bg-[#16A34A]" : ""
+                }`}
+              >
+                income
+              </button>
             </div>
           </div>
           <div className="flex bg-[#F3F4F6] flex-col px-[16px] py-[12px] rounded-[16px]">
@@ -58,7 +75,11 @@ export const Modal = () => {
               </div>
             </div>
             <div>
-              <button className="btn bg-[#0166FF] text-white w-full rounded-[24px] ">
+              <button
+                className={`btn ${
+                  changeType ? "bg-[#16A34A]" : "bg-[#0166FF]"
+                } text-white w-full rounded-[24px]`}
+              >
                 Add Record
               </button>
             </div>

@@ -1,9 +1,19 @@
+import { useState } from "react";
+import { Modal } from "./ModalComponent";
+
 export const LeftSide = () => {
+  const [hidden, setHidden] = useState(false);
+  const showModal = () => {
+    setHidden(!hidden);
+  };
   return (
     <div className="rounded-[10px] bg-white py-[24px] px-[16px] flex gap-[24px] w-[30%] flex-col">
       <div className="flex flex-col gap-[10px]">
         <div className="text-xl">Records</div>
-        <button className="btn bg-[#0166FF] w-full rounded-[20px]  flex gap-[4px] items-center justify-center">
+        <button
+          onClick={showModal}
+          className="btn bg-[#0166FF] w-full rounded-[20px]  flex gap-[4px] items-center justify-center"
+        >
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,6 +81,13 @@ export const LeftSide = () => {
           />
           <div></div>
         </div>
+      </div>
+      <div
+        className={`${
+          hidden ? "flex" : "hidden"
+        } absolute justify-center items-center top-0 left-0 w-[100vw] h-[100vh]  bg-[#00000080]  `}
+      >
+        <Modal hidden={showModal}></Modal>
       </div>
     </div>
   );
