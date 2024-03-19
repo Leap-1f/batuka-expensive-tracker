@@ -1,6 +1,6 @@
 export const UserCard = () => {
   return (
-    <div className=" relative rounded-[18px] py-[30px] px-[20px]  bg-blue-700 w-[385px] h-[220px] ">
+    <div className=" relative rounded-[18px] py-[30px] px-[20px]  bg-blue-700 min-w-[385px] h-[220px] ">
       <div className="flex  gap-[8px] py-[4px] px-[4px] items-center ">
         <div>
           <svg

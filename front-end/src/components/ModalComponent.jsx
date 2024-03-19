@@ -1,6 +1,11 @@
 import { useState } from "react";
+import { HomeSvg } from "../../public/HomeSvg";
 export const Modal = ({ hidden }) => {
   const [changeType, setChangeType] = useState(true);
+  const [categorySelect, setCategorySelect] = useState(false);
+  const openCategirySelect = () => {
+    setCategorySelect(!categorySelect);
+  };
   const expenceType = () => {
     setChangeType(false);
   };
@@ -11,7 +16,7 @@ export const Modal = ({ hidden }) => {
     <div className="flex flex-col rounded-[24px] bg-white w-[792px] px-[24px] py-[24px] sticky z-[3]   ">
       <div className="flex justify-between py-[10px] px-[8px] ">
         <div className="text-xl">Add Record</div>
-        <button onClick={hidden} className="2xl">
+        <button onClick={hidden} className="3xl">
           X
         </button>
       </div>
@@ -22,7 +27,7 @@ export const Modal = ({ hidden }) => {
               <button
                 onClick={expenceType}
                 className={`${
-                  changeType ? "" : "bg-[#0166FF]"
+                  changeType ? "" : "bg-[#0166FF] text-white"
                 } h-[40px] rounded-[24px] w-[50%] text-center `}
               >
                 Expense
@@ -30,7 +35,7 @@ export const Modal = ({ hidden }) => {
               <button
                 onClick={incomeType}
                 className={`rounded-[24px] w-[50%]  text-center h-[40px] ${
-                  changeType ? "bg-[#16A34A]" : ""
+                  changeType ? "bg-[#16A34A] text-white" : ""
                 }`}
               >
                 income
@@ -48,15 +53,7 @@ export const Modal = ({ hidden }) => {
           <div className="flex flex-col gap-[16px]">
             <div className="flex flex-col gap-[10px]">
               <div>Category</div>
-              <div>
-                <select className="select select-bordered w-full max-w-xs">
-                  <option disabled selected>
-                    Who shot first?
-                  </option>
-                  <option>Han Solo</option>
-                  <option>Greedo</option>
-                </select>
-              </div>
+              <div></div>
             </div>
             <div className="flex gap-[60px]">
               <div className="flex flex-col gap-[10px]">

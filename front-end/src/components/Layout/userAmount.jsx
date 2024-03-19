@@ -1,14 +1,14 @@
 export const UserAmount = () => {
   return (
-    <div className="flex gap-[24px]">
-      <div className="  bg-white rounded-[12px] w-[382px] h-[208px]">
+    <div className="flex  gap-[100px] h-full w-full ">
+      <div className="  bg-white rounded-[12px] w-[384px] h-[220px]">
         <div className="flex gap-[10px] px-[24px] py-[16px] items-center w-full">
           <div className="bg-green-500 rounded-[50%] w-[16px] h-[16px] "></div>
           <div>Your Income</div>
         </div>
-        <div className="flex flex-col w-[100%]  px-[24px] py-[20px] gap-[16px] border-solid border-t-[1px]">
+        <div className="flex flex-col w-[100%]  px-[24px] py-[20px] gap-[36px] border-solid border-t-[1px]">
           <div>
-            <div>120000</div>
+            <div className="text-2xl">120000</div>
             <div className="text-gray-400"> Your income amount</div>
           </div>
           <div className="flex  gap-[8px]">
@@ -30,14 +30,14 @@ export const UserAmount = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-white rounded-[12px] w-[382px] h-[208px]">
+      <div className=" bg-white rounded-[12px] w-[384px] h-[220px]">
         <div className="flex gap-[10px] px-[24px] py-[16px] items-center w-full">
           <div className="bg-green-500 rounded-[50%] w-[16px] h-[16px] "></div>
           <div>Your Income</div>
         </div>
-        <div className="flex flex-col w-[100%]  px-[24px] py-[20px] gap-[16px] border-solid border-t-[1px]">
+        <div className="flex flex-col w-[100%]  px-[24px] py-[20px] gap-[36px] border-solid border-t-[1px]">
           <div>
-            <div>120000</div>
+            <div className="text-2xl">120000</div>
             <div className="text-gray-400"> Your income amount</div>
           </div>
           <div className="flex  gap-[8px]">
