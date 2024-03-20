@@ -1,6 +1,6 @@
-export const FinishSec = () => {
+export const Step3 = () => {
   return (
-    <div>
+    <div className="w-[384px] flex flex-col  gap-[24px]">
       <div className="w-[384px] flex flex-col gap-[24px]">
         <div className=" flex flex-col gap-[20px]">
           <div className="flex flex-col justify-center items-center gap-[20px]">

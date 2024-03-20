@@ -1,4 +1,4 @@
-export const BalanceSec = () => {
+export const Step2 = () => {
   return (
     <div className="w-[384px] flex flex-col gap-[24px]">
       <div className=" flex flex-col gap-[24px]">
@@ -23,12 +23,12 @@ export const BalanceSec = () => {
       <div className="flex flex-col gap-[12px]">
         <div className="flex justify-center items-center w-full">
           <input
-            type="text"
-            placeholder="Email"
+            type="number"
+            placeholder="Your balance"
             className="input input-bordered w-full "
           />
         </div>
-        <div className="text-sm text-[#475569] text-center">
+        <div className="text-sm text-[#475569] text-start">
           How much cash do you have in your wallet?
         </div>
       </div>

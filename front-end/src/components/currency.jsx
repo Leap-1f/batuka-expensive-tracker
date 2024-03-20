@@ -1,6 +1,6 @@
-export const Currency = () => {
+export const Step1 = () => {
   return (
-    <div className="flex flex-col gap-[32px]">
+    <div className="flex flex-col gap-[32px] w-[384px]">
       <div className="w-[384px] flex flex-col gap-[24px]">
         <div className=" flex flex-col gap-[24px]">
           <div className="flex flex-col justify-center items-center">
