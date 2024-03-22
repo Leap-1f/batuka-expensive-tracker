@@ -13,27 +13,33 @@ export default function SignUp() {
   const [userBalance, setUserBalance] = useState(0);
   const [step, setStep] = useState(0);
   const stepArray = 3;
+  console.log(username, mail, password);
+
   const sendData = async () => {
-    if (password == repassword) {
+    if (password === repassword) {
       try {
-        const data = await fetch(
-          `${process.env.NEXT_PUBLIC_ENDPOINT}/users/signup`,
-          {
-            method: `POST`,
-            mode: "cors",
-            headers: {
-              Accept: "application/json, text/plain, */*",
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ username, mail, password, userBalance }),
-          }
-        );
-        console.log("ajilla", data);
+        const data = await fetch("http://localhost:8080/users/signup", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            username,
+            mail,
+            password,
+            userBalance,
+          }),
+        });
+        const s = await data.json();
+
+        console.log(username, mail, password);
+        console.log(s);
       } catch (err) {
         console.log(err);
       }
     }
   };
+
   const nextStep = () => {
     setStep(step + 1);
   };

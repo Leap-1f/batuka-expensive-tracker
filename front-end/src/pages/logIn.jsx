@@ -8,10 +8,16 @@ export default function LogIn() {
   const [password, setPassword] = useState("");
   const getUsers = async () => {
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_ENDPOINT}/users`);
+      const res = await fetch(`http://localhost:8080/users`, {
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        method: "GET",
+      });
       const data = await res.json();
+      console.log(data, "data");
       setUsersData(data);
-      console.log("ajilla");
     } catch (err) {
       console.log(err);
     }

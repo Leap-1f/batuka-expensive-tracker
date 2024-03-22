@@ -9,11 +9,13 @@ export const getAllUsers = async (req, res) => {
   }
 };
 export const postUser = async (req, res) => {
-  const newUserData = req.body;
-  console.log(newUserData);
+  console.log(req.body);
+  const { username, mail, password, userBalance } = req.body;
+  console.log(username, mail, password);
+  console.log("ajilla");
   try {
     const data =
-      await sql`SELECT * FROM categoryINSERT INTO users(name,email,password) VALUES('${newUserData.username}', '${password}')`;
+      await sql`INSERT INTO users(name,email,password) VALUES(${username},${mail},${password})`;
     res.send(data);
   } catch (err) {
     console.log(err);
