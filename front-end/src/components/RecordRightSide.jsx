@@ -16,7 +16,7 @@ export const RighSide = () => {
         </div>
         <div className="w-full flex justify-between bg-white px-[20px] py-[8px] rounded-[8px] items-center">
           <div className="flex items-center gap-[10px]">
-            <div className="w-[20px] h-[20px] rounded-[4px] border-solid border-[1px] "></div>
+            <input type="checkbox" defaultChecked className="checkbox" />
             <div>Select All</div>
           </div>
           <div className="text-gray-400">-35000</div>
@@ -27,7 +27,7 @@ export const RighSide = () => {
         <div>
           <div className="w-full flex justify-between bg-white px-[20px] py-[8px] rounded-[8px] items-center ">
             <div className="flex items-center gap-[20px]">
-              <div className="w-[20px] h-[20px] rounded-[4px] border-solid border-[1px] "></div>
+              <input type="checkbox" defaultChecked className="checkbox" />
               <div className="flex gap-[10px] items-center">
                 <div className="rounded-[50%] flex justify-center items-center bg-[#0166FF] py-[4px] px-[4px] w-[28px] h-[28px]">
                   <svg
@@ -58,7 +58,7 @@ export const RighSide = () => {
         <div>
           <div className="w-full flex justify-between bg-white px-[20px] py-[8px] rounded-[8px] items-center ">
             <div className="flex items-center gap-[20px] ">
-              <div className="w-[20px] h-[20px] rounded-[4px] border-solid border-[1px] "></div>
+              <input type="checkbox" defaultChecked className="checkbox" />
               <div className="flex gap-[10px] items-center">
                 <div className="rounded-[50%] flex justify-center items-center bg-[#0166FF] py-[4px] px-[4px] w-[28px] h-[28px]">
                   <svg

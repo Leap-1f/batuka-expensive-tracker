@@ -1,4 +1,4 @@
-export const Step2 = () => {
+export const Step2 = ({ nextStep, backStep, setUserBalance }) => {
   return (
     <div className="w-[384px] flex flex-col gap-[24px]">
       <div className=" flex flex-col gap-[24px]">
@@ -26,6 +26,9 @@ export const Step2 = () => {
             type="number"
             placeholder="Your balance"
             className="input input-bordered w-full "
+            onChange={(event) => {
+              setUserBalance(event.target.value);
+            }}
           />
         </div>
         <div className="text-sm text-[#475569] text-start">
@@ -33,7 +36,12 @@ export const Step2 = () => {
         </div>
       </div>
       <div>
-        <button className="btn w-full bg-[#0166FF] text-white">Next</button>
+        <button
+          onClick={nextStep}
+          className="btn w-full bg-[#0166FF] text-white"
+        >
+          Next
+        </button>
       </div>
     </div>
   );

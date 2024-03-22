@@ -7,11 +7,12 @@ import { Currency } from "@/components/Currency";
 import { Ballet } from "next/font/google";
 import { BalanceSec } from "@/components/Balence";
 import { FinishSec } from "@/components/Finish";
+import Stepper from "@/components/Stepper";
 
 export default function Dashboard() {
   return (
     <div className="">
-      <FinishSec></FinishSec>
+      <Stepper> </Stepper>
     </div>
   );
 }

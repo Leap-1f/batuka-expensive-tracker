@@ -3,7 +3,7 @@ import { RecordMain } from "@/components/layout/RecordMain";
 
 export default function Dashboard() {
   return (
-    <div>
+    <div className="flex justify-center items-center flex-col">
       <Header></Header>
       <RecordMain></RecordMain>
     </div>

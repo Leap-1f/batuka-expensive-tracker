@@ -8,7 +8,7 @@ export const Header = () => {
       <div className="flex  justify-between items-center container  ">
         <div className="flex gap-[24px] h-[24px] w-fit">
           <Logo></Logo>
-          <Link href="./dashboard">
+          <Link href="/">
             <h1>Dashboard</h1>
           </Link>
           <Link href="./records">

@@ -1,4 +1,4 @@
-export const Step1 = () => {
+export const Step1 = ({ nextStep, backStep }) => {
   return (
     <div className="flex flex-col gap-[32px] w-[384px]">
       <div className="w-[384px] flex flex-col gap-[24px]">
@@ -36,7 +36,12 @@ export const Step1 = () => {
         </div>
       </div>
       <div>
-        <button className="btn w-full bg-[#0166FF] text-white">Button</button>
+        <button
+          onClick={nextStep}
+          className="btn w-full bg-[#0166FF] text-white"
+        >
+          Button
+        </button>
       </div>
     </div>
   );
